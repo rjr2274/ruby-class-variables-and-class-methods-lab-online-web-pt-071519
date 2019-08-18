@@ -24,9 +24,9 @@ class Song
   def self.genres
     @@genres.uniq
   end
-  
-  def self.genre_count
 
+  def self.genre_count
+    @@genres.count("pop")
   end
 
 end
