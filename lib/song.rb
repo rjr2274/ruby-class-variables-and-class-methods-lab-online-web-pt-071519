@@ -1,3 +1,4 @@
+require "pry"
 class Song
   @@count = 0
   @@artists = []
@@ -31,7 +32,8 @@ class Song
       @genre_count[genre] = @@genres.count(genre)
     end
     @genre_count
+    binding.pry
   end
 
 end
-binding.pry
+
